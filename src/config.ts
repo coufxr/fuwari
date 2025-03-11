@@ -9,26 +9,26 @@ import { LinkPreset } from './types/config'
 export const siteConfig: SiteConfig = {
   title: 'Fuwari',
   subtitle: 'Demo Site',
-  lang: 'en',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
+  lang: 'zh_CN',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
   themeColor: {
-    hue: 250,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-    fixed: false,     // Hide the theme color picker for visitors
+    hue: 235,         // 设置你的主题色，Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+    fixed: false,     // 是否固定主题色，Hide the theme color picker for visitors
   },
   banner: {
-    enable: false,
-    src: 'assets/images/demo-banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-    position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+    enable: true,
+    src: 'assets/images/demo-banner.png',   // 首页横幅图片，Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    position: 'center',      // 横幅图片位置， Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
-      enable: false,         // Display the credit text of the banner image
+      enable: true,         // 横幅图片的作者信息， Display the credit text of the banner image
       text: '',              // Credit text to be displayed
       url: ''                // (Optional) URL link to the original artwork or artist's page
     }
   },
   toc: {
-    enable: true,           // Display the table of contents on the right side of the post
-    depth: 2                // Maximum heading depth to show in the table, from 1 to 3
+    enable: true,           // 是否显示文章目录， Display the table of contents on the right side of the post
+    depth: 2                // 文章目录默认显示到2级， Maximum heading depth to show in the table, from 1 to 3
   },
-  favicon: [    // Leave this array empty to use the default favicon
+  favicon: [    // 头像图片 Leave this array empty to use the default favicon
     // {
     //   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
     //   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
@@ -51,21 +51,14 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  avatar: 'assets/images/demo-avatar.png',  // 个人头像， Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Lorem Ipsum',
   bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   links: [
     {
-      name: 'Twitter',
-      icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-                                        // You will need to install the corresponding icon set if it's not already included
-                                        // `pnpm add @iconify-json/<icon-set-name>`
-      url: 'https://twitter.com',
-    },
-    {
-      name: 'Steam',
-      icon: 'fa6-brands:steam',
-      url: 'https://store.steampowered.com',
+      name: 'NetEaseMusic',
+      icon: 'tabler:brand-netease-music',
+      url: 'https://music.163.com/#/user/home?id=1997803975',
     },
     {
       name: 'GitHub',
